@@ -2,10 +2,12 @@ var flag = true;
 
 function display(event)
 {
+    let show = document.getElementById("input").value;
+    let buttonText = event.target.value;
+    if((buttonText==="+" || buttonText==="-" || buttonText==="*" || buttonText==="/") && !(show==="NaN" || show==="Infinity" || show==="SyntaxError"))
+        flag = true;
     if(flag)
-    {
-        let show = document.getElementById("input").value;
-        let buttonText = event.target.value;
+    { 
         document.getElementById("input").value = show + buttonText;
     }
 }
