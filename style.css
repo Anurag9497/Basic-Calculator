@@ -1,0 +1,45 @@
+body
+{
+    background-color:linen;
+}
+#input
+{
+    grid-area: myInput;
+    background-color:ghostwhite;
+    border: 1px solid black;
+    border-bottom-style: none;
+    border-radius: 2px;
+    font-size: 30px;
+    font-family:'Courier New', Courier, monospace;
+}
+#clr
+{
+    grid-area: myClr;
+}
+#ans
+{
+    grid-area: myAns;
+}
+.grid-container
+{
+    display: grid;
+    grid-template-areas: 'myInput myInput myInput myInput' '. . . .' '. . . .' '. . . .' '. . . .' 'myClr myClr myAns myAns';
+    width: 400px;
+    height: 400px;
+    margin: 3% auto auto auto;
+    border-bottom-style: none;
+    box-shadow: 2px 8px 15px #cccccc; 
+}
+.grid-container button
+{
+    font-size: larger;
+    cursor: pointer;
+}
+h1
+{
+    width: 22%;
+    margin: 3% auto auto auto;
+    font-weight: lighter;
+    font-size: 50px;
+    color: blueviolet;
+}
